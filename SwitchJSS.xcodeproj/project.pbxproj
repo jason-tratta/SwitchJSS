@@ -19,6 +19,7 @@
 		38D866361BED37810077D32F /* JSSInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866341BED37810077D32F /* JSSInfo.swift */; };
 		38D866381BED37890077D32F /* JSSSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866371BED37890077D32F /* JSSSwitcher.swift */; };
 		38D8663A1BED378F0077D32F /* AddJSSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866391BED378F0077D32F /* AddJSSViewController.swift */; };
+		38EE70AB1BF0F448006C4265 /* Screen Shot.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EE70AA1BF0F448006C4265 /* Screen Shot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		38D866341BED37810077D32F /* JSSInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSInfo.swift; sourceTree = "<group>"; };
 		38D866371BED37890077D32F /* JSSSwitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSSwitcher.swift; sourceTree = "<group>"; };
 		38D866391BED378F0077D32F /* AddJSSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJSSViewController.swift; sourceTree = "<group>"; };
+		38EE70AA1BF0F448006C4265 /* Screen Shot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				38D866091BED36E50077D32F /* Document.xcdatamodeld */,
 				38D866331BED37810077D32F /* JSSInfo+CoreDataProperties.swift */,
 				38D866341BED37810077D32F /* JSSInfo.swift */,
+				38EE70AA1BF0F448006C4265 /* Screen Shot.png */,
 			);
 			path = SwitchJSS;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D8660D1BED36E50077D32F /* Assets.xcassets in Resources */,
+				38EE70AB1BF0F448006C4265 /* Screen Shot.png in Resources */,
 				38D866101BED36E50077D32F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
