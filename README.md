@@ -7,7 +7,7 @@ No more option+clicking and retyping every time!
 
 
 Version .5 Release Notes 
--New Document Structure: Servers can be saved and shared with files. 
+- New Document Structure: Servers can be saved and shared with files. 
 - Removed Selected button and replaced it with a Selected label. 
 
 
