@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="JSSInfo" representedClassName=".JSSInfo" syncable="YES">
+        <attribute name="allowInvalidCert" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="jssAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labelName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="JSSInfo" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
