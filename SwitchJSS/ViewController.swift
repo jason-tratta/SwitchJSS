@@ -34,13 +34,13 @@ var JSApplicationDidFinishLoading = "apploaded"
 
 class ViewController: NSViewController {
     
-    var statusBar = NSStatusBar.systemStatusBar()
+    var statusBar = NSStatusBar.system()
     var statusBarItem : NSStatusItem = NSStatusItem()
     var theMenu:NSMenu = NSMenu()
-    var theEditMenuItem : NSMenuItem = NSMenuItem(title: "Open", action: Selector("editButton:"), keyEquivalent: "")
+    var theEditMenuItem : NSMenuItem = NSMenuItem(title: "Open", action: Selector(("editButton:")), keyEquivalent: "")
     
     
-    var managedObjectContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+    var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     var theDocument = NSPersistentDocument()
  
     
@@ -61,15 +61,15 @@ class ViewController: NSViewController {
 
 
         //Add statusBarItem
-        statusBarItem = statusBar.statusItemWithLength(-1)
+        statusBarItem = statusBar.statusItem(withLength: -1)
         statusBarItem.menu = theMenu
         statusBarItem.title = "JSS"
         statusBarItem.target = self
-        statusBarItem.action = Selector("editButtton:")
+        statusBarItem.action = #selector(ViewController.editButtton(_:))
         
         
         theEditMenuItem.target = self
-        theEditMenuItem.action = Selector("editButtton:")
+        theEditMenuItem.action = #selector(ViewController.editButtton(_:))
         theMenu.addItem(theEditMenuItem)
         
     }
@@ -80,7 +80,7 @@ class ViewController: NSViewController {
         print("Will Appear")
     }
     
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
             // Update the view, if already loaded.
             theDocument = representedObject as! NSPersistentDocument
@@ -110,7 +110,7 @@ class ViewController: NSViewController {
     
     
     
-    @IBAction func editButtton(sender: AnyObject) {
+    @IBAction func editButtton(_ sender: AnyObject) {
         
         
         
@@ -121,7 +121,7 @@ class ViewController: NSViewController {
     }
     
     
-    @IBAction func selectJSSButton(sender: AnyObject) {
+    @IBAction func selectJSSButton(_ sender: AnyObject) {
         
         
         let jssObject = tableView.selectedRow
@@ -134,8 +134,8 @@ class ViewController: NSViewController {
             
         }
         
-        
-        let object = arrayController.arrangedObjects[jssObject] as! JSSInfo
+      
+        let object = (arrayController.arrangedObjects as? AnyObject)?.object(at:jssObject) as! JSSInfo
         object.selected = 1
         let allowInval = object.allowInvalidCert
         var allowBoolString = ""
@@ -155,6 +155,7 @@ class ViewController: NSViewController {
         let jssSwitch = JSSSwitcher()
         jssSwitch.setJssServer(object.jssAddress!, allowInval: allowBoolString)
         selectedLabel.stringValue = object.labelName!
+            
         
         
     }

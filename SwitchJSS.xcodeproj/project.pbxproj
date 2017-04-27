@@ -13,31 +13,12 @@
 		38D8660B1BED36E50077D32F /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38D866091BED36E50077D32F /* Document.xcdatamodeld */; };
 		38D8660D1BED36E50077D32F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D8660C1BED36E50077D32F /* Assets.xcassets */; };
 		38D866101BED36E50077D32F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D8660E1BED36E50077D32F /* Main.storyboard */; };
-		38D8661B1BED36E50077D32F /* SwitchJSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D8661A1BED36E50077D32F /* SwitchJSSTests.swift */; };
-		38D866261BED36E50077D32F /* SwitchJSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866251BED36E50077D32F /* SwitchJSSUITests.swift */; };
 		38D866351BED37810077D32F /* JSSInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866331BED37810077D32F /* JSSInfo+CoreDataProperties.swift */; };
 		38D866361BED37810077D32F /* JSSInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866341BED37810077D32F /* JSSInfo.swift */; };
 		38D866381BED37890077D32F /* JSSSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866371BED37890077D32F /* JSSSwitcher.swift */; };
 		38D8663A1BED378F0077D32F /* AddJSSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D866391BED378F0077D32F /* AddJSSViewController.swift */; };
 		38EE70AB1BF0F448006C4265 /* Screen Shot.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EE70AA1BF0F448006C4265 /* Screen Shot.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		38D866171BED36E50077D32F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D865F81BED36E50077D32F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38D865FF1BED36E50077D32F;
-			remoteInfo = SwitchJSS;
-		};
-		38D866221BED36E50077D32F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38D865F81BED36E50077D32F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38D865FF1BED36E50077D32F;
-			remoteInfo = SwitchJSS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38D866001BED36E50077D32F /* SwitchJSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchJSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +29,8 @@
 		38D8660C1BED36E50077D32F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38D8660F1BED36E50077D32F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38D866111BED36E50077D32F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38D866161BED36E50077D32F /* SwitchJSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchJSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D8661A1BED36E50077D32F /* SwitchJSSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchJSSTests.swift; sourceTree = "<group>"; };
 		38D8661C1BED36E50077D32F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38D866211BED36E50077D32F /* SwitchJSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchJSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D866251BED36E50077D32F /* SwitchJSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchJSSUITests.swift; sourceTree = "<group>"; };
 		38D866271BED36E50077D32F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D866331BED37810077D32F /* JSSInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSSInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -63,20 +42,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		38D865FD1BED36E50077D32F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38D866131BED36E50077D32F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38D8661E1BED36E50077D32F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				38D866001BED36E50077D32F /* SwitchJSS.app */,
-				38D866161BED36E50077D32F /* SwitchJSSTests.xctest */,
-				38D866211BED36E50077D32F /* SwitchJSSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,42 +126,6 @@
 			productReference = 38D866001BED36E50077D32F /* SwitchJSS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38D866151BED36E50077D32F /* SwitchJSSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38D8662D1BED36E50077D32F /* Build configuration list for PBXNativeTarget "SwitchJSSTests" */;
-			buildPhases = (
-				38D866121BED36E50077D32F /* Sources */,
-				38D866131BED36E50077D32F /* Frameworks */,
-				38D866141BED36E50077D32F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38D866181BED36E50077D32F /* PBXTargetDependency */,
-			);
-			name = SwitchJSSTests;
-			productName = SwitchJSSTests;
-			productReference = 38D866161BED36E50077D32F /* SwitchJSSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		38D866201BED36E50077D32F /* SwitchJSSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38D866301BED36E50077D32F /* Build configuration list for PBXNativeTarget "SwitchJSSUITests" */;
-			buildPhases = (
-				38D8661D1BED36E50077D32F /* Sources */,
-				38D8661E1BED36E50077D32F /* Frameworks */,
-				38D8661F1BED36E50077D32F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38D866231BED36E50077D32F /* PBXTargetDependency */,
-			);
-			name = SwitchJSSUITests;
-			productName = SwitchJSSUITests;
-			productReference = 38D866211BED36E50077D32F /* SwitchJSSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,19 +133,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Indiana University";
 				TargetAttributes = {
 					38D865FF1BED36E50077D32F = {
 						CreatedOnToolsVersion = 7.1;
-					};
-					38D866151BED36E50077D32F = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 38D865FF1BED36E50077D32F;
-					};
-					38D866201BED36E50077D32F = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 38D865FF1BED36E50077D32F;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -236,8 +156,6 @@
 			projectRoot = "";
 			targets = (
 				38D865FF1BED36E50077D32F /* SwitchJSS */,
-				38D866151BED36E50077D32F /* SwitchJSSTests */,
-				38D866201BED36E50077D32F /* SwitchJSSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,20 +168,6 @@
 				38D8660D1BED36E50077D32F /* Assets.xcassets in Resources */,
 				38EE70AB1BF0F448006C4265 /* Screen Shot.png in Resources */,
 				38D866101BED36E50077D32F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38D866141BED36E50077D32F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38D8661F1BED36E50077D32F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,36 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38D866121BED36E50077D32F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38D8661B1BED36E50077D32F /* SwitchJSSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38D8661D1BED36E50077D32F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38D866261BED36E50077D32F /* SwitchJSSUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		38D866181BED36E50077D32F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38D865FF1BED36E50077D32F /* SwitchJSS */;
-			targetProxy = 38D866171BED36E50077D32F /* PBXContainerItemProxy */;
-		};
-		38D866231BED36E50077D32F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38D865FF1BED36E50077D32F /* SwitchJSS */;
-			targetProxy = 38D866221BED36E50077D32F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38D8660E1BED36E50077D32F /* Main.storyboard */ = {
@@ -341,8 +216,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -385,8 +262,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -405,6 +284,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -418,6 +298,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasontratta.SwitchJSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -431,58 +312,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasontratta.SwitchJSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		38D8662E1BED36E50077D32F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwitchJSSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iu.edu.SwitchJSSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchJSS.app/Contents/MacOS/SwitchJSS";
-			};
-			name = Debug;
-		};
-		38D8662F1BED36E50077D32F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwitchJSSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iu.edu.SwitchJSSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchJSS.app/Contents/MacOS/SwitchJSS";
-			};
-			name = Release;
-		};
-		38D866311BED36E50077D32F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwitchJSSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iu.edu.SwitchJSSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SwitchJSS;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		38D866321BED36E50077D32F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwitchJSSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iu.edu.SwitchJSSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SwitchJSS;
-				USES_XCTRUNNER = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -503,24 +333,6 @@
 			buildConfigurations = (
 				38D8662B1BED36E50077D32F /* Debug */,
 				38D8662C1BED36E50077D32F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38D8662D1BED36E50077D32F /* Build configuration list for PBXNativeTarget "SwitchJSSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38D8662E1BED36E50077D32F /* Debug */,
-				38D8662F1BED36E50077D32F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38D866301BED36E50077D32F /* Build configuration list for PBXNativeTarget "SwitchJSSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38D866311BED36E50077D32F /* Debug */,
-				38D866321BED36E50077D32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

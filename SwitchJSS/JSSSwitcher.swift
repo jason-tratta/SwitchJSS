@@ -38,17 +38,17 @@ class JSSSwitcher  {
 func readJss() {
 
     let thePath = "~~/Library/Preferences/com.jamfsoftware.jss.plist"
-    let theData = NSFileManager.defaultManager().contentsAtPath(thePath)
+    let theData = FileManager.default.contents(atPath: thePath)
     
     do {
-   try jssDictionary = NSPropertyListSerialization.propertyListWithData(theData!, options: .MutableContainersAndLeaves, format:nil) as! NSMutableDictionary
+   try jssDictionary = PropertyListSerialization.propertyList(from: theData!, options: .mutableContainersAndLeaves, format:nil) as! NSMutableDictionary
     } catch {
         
         debugPrint("Property List Data Serialization Failed")
     }
     
 
-    let casperString = jssDictionary.objectForKey("url")
+    let casperString = jssDictionary.object(forKey: "url")
     debugPrint("JSSSwitcher:" + (casperString as! String))
 
     //Lets Get Recon for completeness. Recon portion is not working as expected
@@ -72,17 +72,17 @@ func readJss() {
 }
 
 
-    func setJssServer(server: String, allowInval: String) {
+    func setJssServer(_ server: String, allowInval: String) {
 
 
-    let path = NSString(string: "~/Library/Preferences/com.jamfsoftware.jss.plist").stringByExpandingTildeInPath
-    jssDictionary.setObject(server, forKey: "url")
-    jssDictionary.setObject(allowInval, forKey: "allowInvalidCertificate")
+    let path = NSString(string: "~/Library/Preferences/com.jamfsoftware.jss.plist").expandingTildeInPath
+    jssDictionary.setObject(server, forKey: "url" as NSCopying)
+    jssDictionary.setObject(allowInval, forKey: "allowInvalidCertificate" as NSCopying)
     
     do {
         
-    let saveData = try NSPropertyListSerialization.dataWithPropertyList(jssDictionary, format: .XMLFormat_v1_0, options:0)
-    saveData.writeToFile(path, atomically: true)
+    let saveData = try PropertyListSerialization.data(fromPropertyList: jssDictionary, format: .xml, options:0)
+    try? saveData.write(to: URL(fileURLWithPath: path), options: [.atomic])
         
     } catch {
         

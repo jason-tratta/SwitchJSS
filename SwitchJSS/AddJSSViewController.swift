@@ -38,12 +38,12 @@ class AddViewController: NSViewController  {
     @IBOutlet weak var allowUntrusedButton: NSButton!
 
 
-    @IBAction func addJSS(sender: AnyObject) {
+    @IBAction func addJSS(_ sender: AnyObject) {
     
-    let theDoc = NSDocumentController.sharedDocumentController().currentDocument as! NSPersistentDocument
+    let theDoc = NSDocumentController.shared().currentDocument as! NSPersistentDocument
     let managedObjectContext = theDoc.managedObjectContext
      
-    let jssObject = NSEntityDescription.insertNewObjectForEntityForName("JSSInfo", inManagedObjectContext: managedObjectContext!) as! JSSInfo
+    let jssObject = NSEntityDescription.insertNewObject(forEntityName: "JSSInfo", into: managedObjectContext!) as! JSSInfo
     
         jssObject.setValue(jssNameTextField.stringValue, forKey: "labelName")
         jssObject.setValue(jssAddressTextField.stringValue, forKey: "jssAddress")
@@ -57,16 +57,16 @@ class AddViewController: NSViewController  {
             jssObject.setValue(false, forKey: "allowInvalidCert")
         }
 
-        self.dismissController(self)
+        self.dismiss(self)
         
     }
 
 
 
-    @IBAction func cancelButton(sender: AnyObject) {
+    @IBAction func cancelButton(_ sender: AnyObject) {
         
         
-        self.dismissController(self)
+        self.dismiss(self)
         
     }
     
